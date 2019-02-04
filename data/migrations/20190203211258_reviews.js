@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
     tbl.increments();
 
     tbl
-      .integer("books_id")
+      .integer("book_id")
       .unsigned()
       .notNullable()
       .references("id")
@@ -11,6 +11,7 @@ exports.up = function(knex, Promise) {
 
     tbl.string("reviewer").notNullable();
     tbl.string("review").notNullable();
+    tbl.integer("rating").notNullable();
   });
 };
 
