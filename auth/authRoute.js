@@ -55,7 +55,6 @@ function login(req, res) {
     .where({ username: creds.username })
     .first()
     .then(user => {
-      //   console.log(user);
       if (user && bcrypt.compareSync(creds.password, user.password)) {
         const token = generateToken(user);
         res.status(200).json({ message: `Welcome ${user.username}`, token });

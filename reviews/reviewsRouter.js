@@ -6,11 +6,6 @@ const router = express.Router();
 
 const db = knex(knexConfig.development);
 
-// router.get("/reviews", (req, res) => {
-//   res.status(200).json("working!");
-//   console.log("working");
-// });
-
 router.get("/reviews", (req, res) => {
   db("reviews")
     .then(review => {
