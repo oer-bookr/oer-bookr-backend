@@ -29,20 +29,34 @@ router.get("/books", (req, res) => {
     );
 });
 
-router.get("/users", authenticate, (req, res) => {
-  db("users")
-    .then(user => {
-      if (user) {
-        res.status(200).json(user);
-      } else {
-        res.status(404).json({ error: "users not found" });
-      }
-    })
-    .catch(err =>
-      res
-        .status(500)
-        .json({ error: "The users information could not be retrieved." })
-    );
+router.get("/books/:id", (req, res) => {
+  const { id } = req.params;
+  db.select()
+    .from("books")
+    .where({ id })
+    .then(books => {
+      db.select()
+        .from("reviews")
+        .where("book_id", id)
+        .then(reviews => {
+          const book = books[0];
+          res.status(200).json({
+            id: book.id,
+            title: book.title,
+            author: book.author,
+            publisher: book.publisher,
+            license: book.license,
+            reviews: reviews.map(review => {
+              return {
+                id: review.id,
+                reviewer: review.reviewer,
+                review: review.review,
+                rating: review.rating
+              };
+            })
+          });
+        });
+    });
 });
 
 module.exports = router;
