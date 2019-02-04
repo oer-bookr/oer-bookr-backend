@@ -5,7 +5,7 @@ const booksRouter = require("../books/booksRouter.js");
 
 const router = express.Router();
 
-router.use("/reviews", reviewsRouter);
-router.use("/books", booksRouter);
+router.use("/", reviewsRouter);
+router.use("/", booksRouter);
 
 module.exports = router;
