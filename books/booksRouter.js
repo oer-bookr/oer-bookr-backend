@@ -68,14 +68,16 @@ router.post("/books", (req, res) => {
     !changes.title ||
     !changes.author ||
     !changes.publisher ||
-    !changes.license
+    !changes.license ||
+    !changes.subject ||
+    !changes.image
   ) {
     res.status(422).json({ error: "Please fill in all categories!" });
   } else {
     db.insert(changes)
       .into("books")
-      .then(project => {
-        res.status(201).json(project);
+      .then(book => {
+        res.status(201).json(book);
       })
       .catch(err => {
         res.status(500).json({
