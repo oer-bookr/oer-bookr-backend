@@ -2,6 +2,11 @@
 
 https://oer-bookr-api.herokuapp.com/books
 
+### Download Project Files
+
+- **Fork** and **Clone** this repository.
+- **CD into the folder** where you cloned the repository.
+
 #### Auth Endpoints
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                         |
