@@ -60,6 +60,75 @@ exports.seed = function(knex, Promise) {
           review:
             "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
           rating: 2
+        },
+        {
+          book_id: 8,
+          reviewer: "Romonda Wyne",
+          review:
+            "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+          rating: 4
+        },
+        {
+          book_id: 9,
+          reviewer: "Baird McSporon",
+          review: "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+          rating: 3
+        },
+        {
+          book_id: 10,
+          reviewer: "Jared Dugald",
+          review:
+            "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+          rating: 1
+        },
+        {
+          book_id: 11,
+          reviewer: "Holli McMeekan",
+          review:
+            "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+          rating: 5
+        },
+        {
+          book_id: 3,
+          reviewer: "Ivor Picheford",
+          review:
+            "uspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+          rating: 3
+        },
+        {
+          book_id: 2,
+          reviewer: "Gusti Kerans",
+          review:
+            "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+          rating: 3
+        },
+        {
+          book_id: 1,
+          reviewer: "Elizabeth Langan",
+          review:
+            "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+          rating: 4
+        },
+        {
+          book_id: 5,
+          reviewer: "Maria Gartrell",
+          review:
+            "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+          rating: 2
+        },
+        {
+          book_id: 5,
+          reviewer: "Marcelia Goolden",
+          review:
+            "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+          rating: 3
+        },
+        {
+          book_id: 8,
+          reviewer: "Silvio Hlavac",
+          review:
+            "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis..",
+          rating: 5
         }
       ]);
     });
