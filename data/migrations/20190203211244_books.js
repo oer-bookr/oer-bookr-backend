@@ -9,7 +9,11 @@ exports.up = function(knex, Promise) {
     tbl.string("publisher", 255).notNullable();
 
     tbl.string("license", 255).notNullable();
+
+    tbl.string("subject", 255).notNullable();
   });
 };
 
-exports.down = function(knex, Promise) {};
+exports.down = function(knex, Promise) {
+  return knex.schema.dropTableIfExists("books");
+};

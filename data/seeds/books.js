@@ -10,49 +10,56 @@ exports.seed = function(knex, Promise) {
           Author: "Dennie Cornier",
           Publisher: "Carlina Blackway",
           License:
-            "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."
+            "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+          Subject: "Math"
         },
         {
           Title: "The Colossus in the Abyss",
           Author: "Natty Berridge",
           Publisher: "Dan Yellep",
           License:
-            "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque."
+            "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+          Subject: "History"
         },
         {
           Title: "Paradise Bound",
           Author: "Vaclav Enderwick",
           Publisher: "Homerus Haveline",
           License:
-            "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."
+            "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+          Subject: "English"
         },
         {
           Title: "Beyond the Storm",
           Author: "Darrell Maxted",
           Publisher: "Betsy Smickle",
           License:
-            "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+            "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+          Subject: "Science"
         },
         {
           Title: "Zenith of Pluto",
           Author: "Nolly Delmage",
           Publisher: "Viki Royle",
           License:
-            "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus."
+            "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+          Subject: "History"
         },
         {
           Title: "The Damned Torch",
           Author: "Lory Iacobassi",
           Publisher: "Hector Newport",
           License:
-            "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+            "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+          Subject: "English"
         },
         {
           Title: "Babylon Sinking",
           Author: "Aluin Rubie",
           Publisher: "Amitie McVicar",
           License:
-            "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+            "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+          Subject: "History"
         }
       ]);
     });
