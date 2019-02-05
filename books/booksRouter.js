@@ -46,6 +46,8 @@ router.get("/books/:id", (req, res) => {
             author: book.author,
             publisher: book.publisher,
             license: book.license,
+            subject: book.subject,
+            image: book.image,
             reviews: reviews.map(review => {
               return {
                 id: review.id,
