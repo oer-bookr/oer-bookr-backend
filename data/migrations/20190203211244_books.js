@@ -13,6 +13,8 @@ exports.up = function(knex, Promise) {
     tbl.string("subject", 255).notNullable();
 
     tbl.string("image", 500).notNullable();
+
+    tbl.string("link", 500).notNullable();
   });
 };
 

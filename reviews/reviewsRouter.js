@@ -22,6 +22,18 @@ router.get("/reviews", (req, res) => {
     );
 });
 
+router.get("/reviews/:id", (req, res) => {
+  const { id } = req.params;
+
+  db.select()
+    .from("reviews")
+    .where({ id })
+    .then(reviews => {
+      const review = reviews[0];
+      res.status(200).json(review);
+    });
+});
+
 router.post("/reviews", (req, res) => {
   const changes = req.body;
 
