@@ -6,91 +6,92 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex("books").insert([
         {
-          title: "Bound for Error",
-          author: "Dennie Cornier",
-          publisher: "Carlina Blackway",
-          license:
-            "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-          subject: "Math"
+          title: "Algebra and Trigonometry",
+          author: "Jay Abramson",
+          publisher: "OpenStax",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "Math",
+          image: "https://tinyurl.com/ydyk477d"
         },
         {
-          title: "The Colossus in the Abyss",
-          author: "Natty Berridge",
-          publisher: "Dan Yellep",
-          license:
-            "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-          subject: "History"
+          title: "The History of Our Tribe: Hominini",
+          author: "Barbara Welker",
+          publisher: "Open SUNY",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "History",
+          image: "https://tinyurl.com/y7y364ft"
         },
         {
-          title: "Paradise Bound",
-          author: "Vaclav Enderwick",
-          publisher: "Homerus Haveline",
-          license:
-            "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-          subject: "English"
+          title: "A Theory of Literate Action: Literate Action Volume 2",
+          author: "Charles Bazerman",
+          publisher: "WAC Clearinghouse",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "English",
+          image: "https://tinyurl.com/y96dte8z"
         },
         {
-          title: "Beyond the Storm",
-          author: "Darrell Maxted",
-          publisher: "Betsy Smickle",
-          license:
-            "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-          subject: "Science"
+          title: "Cells: Molecules and Mechanisms",
+          author: "Eric Wong",
+          publisher: "Independent",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "Science",
+          image: "https://tinyurl.com/y8yxdh6k"
         },
         {
-          title: "Zenith of Pluto",
-          author: "Nolly Delmage",
-          publisher: "Viki Royle",
-          license:
-            "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-          subject: "History"
+          title: "World Regional Geography",
+          author: "Caitlin Finlayson",
+          publisher: "Independent",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "History",
+          image: "https://tinyurl.com/y89s6agk"
         },
         {
-          title: "The Damned Torch",
-          author: "Lory Iacobassi",
-          publisher: "Hector Newport",
-          license:
-            "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-          subject: "English"
+          title: "A Rhetoric of Literate Action: Literate Action Volume 1",
+          author: "Charles Bazerman",
+          publisher: "WAC Clearinghouse",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "English",
+          image: "https://tinyurl.com/yc77unjv"
         },
         {
-          title: "Babylon Sinking",
-          author: "Aluin Rubie",
-          publisher: "Amitie McVicar",
-          license:
-            "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-          subject: "History"
+          title: "Native Peoples of North America",
+          author: "Susan Stebbins",
+          publisher: "Open SUNY",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "History",
+          image: "https://tinyurl.com/y79lmzz2"
         },
         {
-          title: "Alpha Sinking",
-          author: "Anthea McSorley",
-          publisher: "Noelle McSaul",
-          license:
-            "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-          subject: "English"
+          title: "Copy(write): Intellectual Property in the Writing Classroom",
+          author: "Martine Rife",
+          publisher: "WAC Clearinghouse",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "English",
+          image: "https://tinyurl.com/ybv62g8n"
         },
         {
-          title: "The Amethyst Island",
-          author: "Paige Philippet",
-          publisher: "Emerson Joseph",
-          license: "Fusce consequat. Nulla nisl. Nunc nisl.",
-          subject: "History"
+          title: "American Government",
+          author: "Glen Krutz",
+          publisher: "OpenStax CNX",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "History",
+          image: "https://tinyurl.com/yayg2zoq"
         },
         {
-          title: "Crimson Pandemic",
-          author: "Leta Redhouse",
-          publisher: "Gasper Rubinovici",
-          license:
-            "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-          subject: "Science"
+          title: "Advanced Waterworks Mathematics",
+          author: "Michael Alvord",
+          publisher: "Independent",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "Science",
+          image: "https://tinyurl.com/y8jkzycj"
         },
         {
-          title: "Crimson Lace",
-          author: "Tedda Saunders",
-          publisher: "Lanni Upwood",
-          license:
-            "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-          subject: "Math"
+          title: "A First Course in Linear Algebra",
+          author: "Ken Kuttler",
+          publisher: "Lyryx",
+          license: "Attribution 4.0 International (CC BY 4.0)",
+          subject: "Math",
+          image: "https://tinyurl.com/yacruok6"
         }
       ]);
     });
