@@ -33,3 +33,17 @@ https://oer-bookr-api.herokuapp.com/books
 | POST   | /reviews   | Creates a `review` |
 | DELETE | /reviews/:id | Deletes the `review` with the specified `id`. |
 | PUT    | /reviews/:id | Updates the `review` with the specified `id`. |
+
+#### Books Data Model
+
+| Field |    Type   | Description                                                                                                                                                                                                                                                                                         |
+| ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id     | Integer | ID of the newly created book. |
+| title  | String  | Title of the newly created book. |
+| author | String  | Author of the newly created book. |
+| publisher | String | Publisher of the newly created book. |
+| license | String | License of the newly created book. |
+| subject | String | Subject of the newly created book. |
+| image | String | Image of the newly created book. |
+| link | String | Link to the newly created book. |
+| reviews | Array of Objects | Array of Reviews for the newly created book. |
