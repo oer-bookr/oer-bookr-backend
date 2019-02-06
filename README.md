@@ -7,6 +7,8 @@ https://oer-bookr-api.herokuapp.com/books
 - **Fork** and **Clone** this repository.
 - **CD into the folder** where you cloned the repository.
 
+## Test API Endpoints
+
 #### Auth Endpoints
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                         |
@@ -33,6 +35,8 @@ https://oer-bookr-api.herokuapp.com/books
 | POST   | /reviews   | Creates a `review`. |
 | DELETE | /reviews/:id | Deletes the `review` with the specified `id`. |
 | PUT    | /reviews/:id | Updates the `review` with the specified `id`. |
+
+## Data Models
 
 #### Books Data Model
 
