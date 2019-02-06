@@ -48,6 +48,7 @@ router.get("/books/:id", (req, res) => {
             license: book.license,
             subject: book.subject,
             image: book.image,
+            link: book.link,
             reviews: reviews.map(review => {
               return {
                 id: review.id,
@@ -94,7 +95,7 @@ router.delete("/books/:id", (req, res) => {
     .del()
     .then(count => {
       if (count) {
-        res.status(200).json(count);
+        res.status(200).json({ count, id });
       } else {
         res.status(404).json({ error: "Book not found!" });
       }
