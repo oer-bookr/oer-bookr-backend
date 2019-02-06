@@ -6,14 +6,14 @@ const router = express.Router();
 
 const db = knex(knexConfig.development);
 
-const { authenticate } = require("../auth/authenticate");
+const { authenticate } = require("../auth/authenticate.js");
 
 router.get("/", (req, res) => {
   res.status(200).json("working!");
   console.log("working");
 });
 
-router.get("/books", (req, res) => {
+router.get("/books", authenticate, (req, res) => {
   db("books")
     .then(book => {
       if (book) {
@@ -29,7 +29,7 @@ router.get("/books", (req, res) => {
     );
 });
 
-router.get("/books/:id", (req, res) => {
+router.get("/books/:id", authenticate, (req, res) => {
   const { id } = req.params;
   db.select()
     .from("books")
@@ -67,7 +67,7 @@ router.get("/books/:id", (req, res) => {
     });
 });
 
-router.post("/books", (req, res) => {
+router.post("/books", authenticate, (req, res) => {
   const changes = req.body;
 
   if (
@@ -93,7 +93,7 @@ router.post("/books", (req, res) => {
   }
 });
 
-router.delete("/books/:id", (req, res) => {
+router.delete("/books/:id", authenticate, (req, res) => {
   const { id } = req.params;
   db("books")
     .where({ id: id })
@@ -110,7 +110,7 @@ router.delete("/books/:id", (req, res) => {
     });
 });
 
-router.put("/books/:id", (req, res) => {
+router.put("/books/:id", authenticate, (req, res) => {
   const changes = req.body;
   const { id } = req.params;
   db("books")

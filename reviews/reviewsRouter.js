@@ -3,10 +3,11 @@ const knex = require("knex");
 const knexConfig = require("../knexfile.js");
 
 const router = express.Router();
+const { authenticate } = require("../auth/authenticate.js");
 
 const db = knex(knexConfig.development);
 
-router.get("/reviews", (req, res) => {
+router.get("/reviews", authenticate, (req, res) => {
   db("reviews")
     .then(review => {
       if (review) {
@@ -22,7 +23,7 @@ router.get("/reviews", (req, res) => {
     );
 });
 
-router.get("/reviews/:id", (req, res) => {
+router.get("/reviews/:id", authenticate, (req, res) => {
   const { id } = req.params;
 
   db.select()
@@ -34,7 +35,7 @@ router.get("/reviews/:id", (req, res) => {
     });
 });
 
-router.post("/reviews", (req, res) => {
+router.post("/reviews", authenticate, (req, res) => {
   const changes = req.body;
 
   if (!changes.reviewer || !changes.review || !changes.rating) {
@@ -53,7 +54,7 @@ router.post("/reviews", (req, res) => {
   }
 });
 
-router.delete("/reviews/:id", (req, res) => {
+router.delete("/reviews/:id", authenticate, (req, res) => {
   const { id } = req.params;
   db("reviews")
     .where({ id: id })
@@ -70,7 +71,7 @@ router.delete("/reviews/:id", (req, res) => {
     });
 });
 
-router.put("/reviews/:id", (req, res) => {
+router.put("/reviews/:id", authenticate, (req, res) => {
   const changes = req.body;
   const { id } = req.params;
   db("reviews")
