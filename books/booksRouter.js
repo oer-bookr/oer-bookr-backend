@@ -58,6 +58,11 @@ router.get("/books/:id", (req, res) => {
               };
             })
           });
+        })
+        .catch(err => {
+          res
+            .status(500)
+            .json({ err: "The book and review could not be retrieved." });
         });
     });
 });
