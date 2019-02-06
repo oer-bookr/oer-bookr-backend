@@ -9,14 +9,14 @@ https://oer-bookr-api.herokuapp.com/books
 
 ## Test API Endpoints
 
-#### Auth Endpoints
+### Auth Endpoints
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                         |
 | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | POST   | /register | Creates a `user` sent inside the `body` of the request. **Hashes** password before saving to the database.                                                                                                                                           |
 | POST   | /login    | Uses the credentials sent inside the `body` to authenticate the user. On successful login, creates a JWT token to be used to access restricted endpoints. |
 
-#### Book Endpoints
+### Book Endpoints
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                         |
 | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ https://oer-bookr-api.herokuapp.com/books
 | DELETE | /books/:id | Deletes the `book` with the specified `id`. |
 | PUT    | /books/:id | Updates the `book` with the specified `id`.  |
 
-#### Review Endpoints
+### Review Endpoints
 
 | Method | Endpoint      | Description                                                                                                                                                                                                                                                                                         |
 | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ https://oer-bookr-api.herokuapp.com/books
 
 ## Data Models
 
-#### Books Data Model
+### Books Data Model
 
 | Field |    Type   | Description                                                                                                                                                                                                                                                                                         |
 | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ https://oer-bookr-api.herokuapp.com/books
 | link | String | Link to the newly created book. |
 | reviews | Array of Objects | Array of Reviews for the newly created book. |
 
-#### Reviews Data Model
+### Reviews Data Model
 
 | Field |    Type   | Description                                                                                                                                                                                                                                                                                         |
 | ------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
