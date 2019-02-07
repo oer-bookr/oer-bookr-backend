@@ -7,7 +7,7 @@ const { authenticate } = require("../auth/authenticate.js");
 
 const db = knex(knexConfig.development);
 
-router.get("/reviews", (req, res) => {
+router.get("/reviews", authenticate, (req, res) => {
   db("reviews")
     .then(review => {
       if (review) {
@@ -23,7 +23,7 @@ router.get("/reviews", (req, res) => {
     );
 });
 
-router.get("/reviews/:id", (req, res) => {
+router.get("/reviews/:id", authenticate, (req, res) => {
   const { id } = req.params;
 
   db.select()
