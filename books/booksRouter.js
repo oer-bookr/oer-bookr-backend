@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
   console.log("working");
 });
 
-router.get("/books", authenticate, (req, res) => {
+router.get("/books", (req, res) => {
   db("books")
     .then(book => {
       if (book) {
@@ -29,7 +29,7 @@ router.get("/books", authenticate, (req, res) => {
     );
 });
 
-router.get("/books/:id", authenticate, (req, res) => {
+router.get("/books/:id", (req, res) => {
   const { id } = req.params;
   db.select()
     .from("books")
