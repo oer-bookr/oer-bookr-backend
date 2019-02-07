@@ -67,7 +67,7 @@ router.get("/books/:id", authenticate, (req, res) => {
     });
 });
 
-router.post("/books", authenticate, (req, res) => {
+router.post("/books", (req, res) => {
   const changes = req.body;
 
   if (
@@ -93,7 +93,7 @@ router.post("/books", authenticate, (req, res) => {
   }
 });
 
-router.delete("/books/:id", authenticate, (req, res) => {
+router.delete("/books/:id", (req, res) => {
   const { id } = req.params;
   db("books")
     .where({ id: id })
@@ -110,7 +110,7 @@ router.delete("/books/:id", authenticate, (req, res) => {
     });
 });
 
-router.put("/books/:id", authenticate, (req, res) => {
+router.put("/books/:id", (req, res) => {
   const changes = req.body;
   const { id } = req.params;
   db("books")

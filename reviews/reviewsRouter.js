@@ -35,7 +35,7 @@ router.get("/reviews/:id", authenticate, (req, res) => {
     });
 });
 
-router.post("/reviews", authenticate, (req, res) => {
+router.post("/reviews", (req, res) => {
   const changes = req.body;
 
   if (!changes.reviewer || !changes.review || !changes.rating) {
@@ -54,7 +54,7 @@ router.post("/reviews", authenticate, (req, res) => {
   }
 });
 
-router.delete("/reviews/:id", authenticate, (req, res) => {
+router.delete("/reviews/:id", (req, res) => {
   const { id } = req.params;
   db("reviews")
     .where({ id: id })
@@ -71,7 +71,7 @@ router.delete("/reviews/:id", authenticate, (req, res) => {
     });
 });
 
-router.put("/reviews/:id", authenticate, (req, res) => {
+router.put("/reviews/:id", (req, res) => {
   const changes = req.body;
   const { id } = req.params;
   db("reviews")
